@@ -1,5 +1,6 @@
 ﻿#body_content > * {
     display:inline-block;
+    vertical-align: top;
 }
 
 #body_content > *:nth-child(1) {
@@ -15,6 +16,44 @@
     width: 25%;
 }
 
-header, footer {
+header, footer, main:not(#aboutMe-Main) {
     text-align: center;
+}
+
+video {
+    width: 80%;
+}
+
+header {
+    background:url(background.jpg) no-repeat center center fixed;
+    width:100%;
+    height: 250px;
+}
+
+.row {
+    width: 100%;
+    text-align:left;
+    padding: 5px 0;
+}
+
+.row.submit {
+    text-align: center;
+}
+
+.row > div {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.col-1 {
+    width:10%;
+    margin-left:33%;
+}
+
+.col-2 > * {
+    width: 200px;
+}
+
+textarea {
+    height: 100px;
 }
